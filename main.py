@@ -11,7 +11,7 @@ print("모듈로드 부팅중") # 모듈로드메시지
 client = discord.Client()
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)#음 확인해보자!
-resuit = sock.connect_ex(('localhost',61274))#주소세팅!
+resuit = sock.connect_ex(('rokserver.kro.kr',19132))#주소세팅!
 chhanel = 544547327420137473
 
 @client.event
