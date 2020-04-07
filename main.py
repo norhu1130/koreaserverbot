@@ -20,7 +20,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('---------')
-    await client.change_presence(game=discord.Game(name="가현봇을사용할수없습니다!", type=1))
+    await client.change_presence(game=discord.Game(name="!가현봇 으로 사용할수 있습니다", type=1))
 
 
 
