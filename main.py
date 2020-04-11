@@ -33,22 +33,7 @@ async def on_message(message):#메시지로드시작부분
      await client.send_message(message.channel, "Discord API : :white_check_mark: \nDiscord Bot :white_check_mark:") 
  if message.content.startswith('!가현봇 시스템 LOOOOGOUT'):
         await client.logout()
- if message.content.startswith('!가현봇 서버'):
-   socket.setdefaulttimeout(5)  
-   with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
-    try:
-        s.sendto("data".encode(),addr)
-        s.recvfrom(1024)
-        print("open!")
-        await client.send_message(message.channel, "서버가 켜져있어요!")
-    except Exception as e:
-        print(e)
-        if str(e) == "timed out":
-            print("OPEN")
-            await client.send_message(message.channel, "서버가 켜져있어요!")
-        else:
-            print("닫힘")        
-            await client.send_message(message.channel, "서버가 닫혀있어요!")
+
      
 
  if message.content.startswith('!가현봇 대한민국서버'):
