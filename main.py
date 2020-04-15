@@ -40,4 +40,4 @@ async def on_message(message):#메시지로드시작부분
         await client.send_message(message.channel, "대한민국 서버는 BE고 매번 최신 버전을 유지해요! 저를 제작한 제작진분들도 하는 갓 서버라네요 저도 해봤는데 재미있어요")#전송
 
 
-client.run("NTEzMTc3MjE0NzE2NDc3NDQ0.XpVjOg.theXbGBCkmR--yt1KY0KbhOy7Zo")
+client.run("소듕한토큰!")
